@@ -1,0 +1,26 @@
+.slide_hello {
+  background: linear-gradient(-45deg, #ee7752, #E73C7E, #9c27b0, #3f51b5);
+  background-size: 400% 400%;
+  animation:  gradientBG 15s ease infinite;
+}
+
+@keyframes gradientBG {
+  0%{ background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%;}
+
+}
+
+.slide_about {
+  background: #009688;
+  color: #000;
+}
+
+.slide_contact {
+  padding-top: 30%;
+  background: #9c20a5;
+}
+
+.slide_gallery{
+  background: #cfdd19;
+}
