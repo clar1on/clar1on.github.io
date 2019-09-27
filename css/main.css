@@ -1,49 +1,43 @@
 * {
-  font-family: 'Raleway', sans-serif;
-  text-transform: uppercase;
+font-family: 'Raleway', sans-serif;
+  /* text-transform: uppercase; */
+}
+
+a {
+  color: #FFF;
+  text-transform: lowercase;
+}
+
+a:hover {
+  color: #FFF;
+  text-decoration: none;
+}
+
+
+
+h4 {
+  font-weight: 100;
+  color: #FFF;
+  text-align: center;
+  line-height: 150%;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 h1 {
-  text-align: center;
-}
-
-#gradient-vertical {
-text-transform: uppercase;
-  background: linear-gradient(45deg, #c51b8a 30%, #0450f5 100%, #2e84ca);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: #0B2349;
-  display: table;
-  margin: 20px auto;
-}
-
-#gradient-gorizontal {
-text-transform: uppercase;
-  background: linear-gradient(180deg, #c51b8a 30%, #0450f5 100%, #2e84ca);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: #0B2349;
-  display: table;
-  margin: 20px auto;
-}
-
-h4 {
-  text-align: center;
-  line-height: 150%;
-}
-
-.section {
+  padding-right: 10%;
+  padding-left: 10%;
+  font-weight: 100;
   color: #FFF;
+  text-align: center;
 }
 
-.socialButt img {
+
+.socialBtn img {
   width: 100px;
   height: 100px;
-  padding: 0px;
-  margin: 10px;
+
 }
-
-
 
 .container#contact {
   display: flex;
@@ -51,41 +45,17 @@ h4 {
     justify-content: center;
     align-items: center;
     align-content: center;
+    margin-left: 15%;
+    margin-right: 15%;
+
 }
 
 #avatar {
-  width: 200px;
-  height: 200px;
+  width: 50%;
+  height: 50%;
+  max-width: 150px;
+  max-height: 150px;
   border-radius: 100%;
-}
-
-#keepcalm {
-  position: absolute;
-  right: 10px;
-  bottom: 10px;
-}
-
-#keepcalm span {
-  color: #16f13b;
-}
-
-.pp-easing {
-  -webkit-transition: all 500ms cubic-bezier(0.550, 0.085, 0.000, 0.990);
-  -moz-transition: all 500ms cubic-bezier(0.550, 0.085, 0.000, 0.990);
-  -o-transition: all 500ms cubic-bezier(0.550, 0.085, 0.000, 0.990);
-  transition: all 500ms cubic-bezier(0.550, 0.085, 0.000, 0.990);
-  /* custom */
-  -webkit-transition-timing-function: cubic-bezier(0.550, 0.085, 0.000, 0.990);
-  -moz-transition-timing-function: cubic-bezier(0.550, 0.085, 0.000, 0.990);
-  -o-transition-timing-function: cubic-bezier(0.550, 0.085, 0.000, 0.990);
-  transition-timing-function: cubic-bezier(0.550, 0.085, 0.000, 0.990);
-  /* custom */
-}
-
-body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,
-form,fieldset,input,textarea,p,blockquote,th,td {
-    padding: 0;
-    margin: 0;
 }
 
 .btn {
@@ -93,10 +63,4 @@ form,fieldset,input,textarea,p,blockquote,th,td {
   border-radius: 10px;
   border: 1px solid #FFF;
   transition: .2s;
-}
-
-.btn:hover {
-  background: #FFF;
-  color: #16a085;
-  transition: 0.2s;
 }
