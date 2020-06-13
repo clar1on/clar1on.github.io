@@ -5,6 +5,8 @@
  * @license MIT licensed
  *
  * Copyright (C) 2016 alvarotrigo.com - A project by Alvaro Trigo
+ *
+ *Modded by Nick Hlushpenko for personal CV. 2020
  */
 html, body {
     overflow:hidden;
@@ -13,26 +15,28 @@ html, body {
 
     /*Avoid flicker on slides transitions for mobile phones #336 */
     -webkit-tap-highlight-color: rgba(0,0,0,0);
+
+
+    /*Fix black background when used corners*/
+    background-color: black;
 }
 .pp-section {
     height:100%;
     position:absolute;
     width:100%;
+    border: inset;
+    border: 0px;
+    border-radius: 25px;
 
     /* fixes flickering in firefox*/
     backface-visibility: hidden;
 }
 .pp-easing {
-    -webkit-transition: all 1000ms cubic-bezier(0.550, 0.085, 0.000, 0.990);
-    -moz-transition: all 1000ms cubic-bezier(0.550, 0.085, 0.000, 0.990);
-    -o-transition: all 1000ms cubic-bezier(0.550, 0.085, 0.000, 0.990);
-    transition: all 1000ms cubic-bezier(0.550, 0.085, 0.000, 0.990);
-    /* custom */
-    -webkit-transition-timing-function: cubic-bezier(0.550, 0.085, 0.000, 0.990);
-    -moz-transition-timing-function: cubic-bezier(0.550, 0.085, 0.000, 0.990);
-    -o-transition-timing-function: cubic-bezier(0.550, 0.085, 0.000, 0.990);
-    transition-timing-function: cubic-bezier(0.550, 0.085, 0.000, 0.990);
-    /* custom */
+    /*Custom reactive scrolling, very pretty*/
+    -webkit-transition: all 1000ms cubic-bezier(0.2, 0.0085, 0.02, 0.995);
+    -moz-transition: all 1000ms cubic-bezier(0.2, 0.0085, 0.02, 0.995);
+    -o-transition: all 1000ms cubic-bezier(0.02, 0.0085, 0.02, 0.995);
+    transition: all 1000ms cubic-bezier(0.02, 0.0085, 0.02, 0.995);
 }
 #pp-nav {
     position: fixed;
@@ -42,7 +46,7 @@ html, body {
     opacity: 1;
 }
 #pp-nav.right {
-    right: 10px;
+    right: 3px;
 }
 #pp-nav.left {
     left: 10px;
