@@ -12,7 +12,15 @@
 }
 
 .about-slide {
-  background: #000;
+  background: #000000;
+}
+
+.krasnarodyna-slide{
+  background: #16a085;
+}
+
+.clarionio-slide {
+  background: #3c3c3c;
 }
 
 .contact-slide {

@@ -60,10 +60,48 @@ h1 {
 }
 
 .btn {
-    padding: 5px 10px;
-    border-radius: 10px;
+    text-decoration: none;
+    padding: 5px 15px;
+    border-radius: 15px;
     border: 1px solid #FFF;
-    transition: .2s;
+    transition: .2s;;
+
+}
+
+.btn:hover {
+    background: #FFF;
+    color: #16a085;
+    transition: 0.2s;
+}
+
+.triangle {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 11111;
+    border: 40px solid transparent;
+    border-bottom: 40px solid #151513;
+    border-left: 40px solid #151513;
+}
+
+
+.tv_container_pixel-2-xl {
+    display: flex;
+    background: url(../img/gadgets/pixel-2-xl.png) no-repeat top left transparent;
+    width: 240px;
+    height: 480px;
+    position: relative;
+    margin: auto;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.tv_container_pixel-2-xl video {
+    position: absolute;
+    top: 31px;
+    left: 13px;
+    width: 210px;
+    border-radius: 9px;
 }
 
 

@@ -24,7 +24,7 @@ html, body {
     height:100%;
     position:absolute;
     width:100%;
-    border-radius: 0 0 25px 25px;
+    /*border-radius: 0 0 25px 25px;*/
 
     /* fixes flickering in firefox*/
     backface-visibility: hidden;
