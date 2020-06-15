@@ -1,18 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
 * {
-    /*font-family: 'Raleway', sans-serif;*/
     font-family: 'Varela Round', sans-serif;
 }
 
 a {
     color: #FFF;
-    text-transform: lowercase;
-}
-
-a:hover {
-    color: #FFF;
+    text-transform: uppercase;
     text-decoration: none;
 }
 
+a:hover{
+    text-decoration: none;
+}
 
 h4 {
     font-weight: 100;
@@ -23,7 +22,7 @@ h4 {
     margin-right: 34px
 }
 
-h1 {
+h1, h2 {
     padding-right: 10%;
     padding-left: 10%;
     font-weight: 100;
@@ -31,24 +30,145 @@ h1 {
     text-align: center;
 }
 
+/*Dark triangle in left-down */
+.triangle {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 11111;
+    border: 40px solid transparent;
+    border-bottom: 40px solid #151513;
+    border-left: 40px solid #151513;
+}
 
+/*Scroll animated icon*/
+@-webkit-keyframes ani-mouse {
+    0% {
+        opacity: 1;
+        top: 29%;
+    }
+    15% {
+        opacity: 1;
+        top: 50%;
+    }
+    50% {
+        opacity: 0;
+        top: 50%;
+    }
+    100% {
+        opacity: 0;
+        top: 29%;
+    }
+}
+@-moz-keyframes ani-mouse {
+    0% {
+        opacity: 1;
+        top: 29%;
+    }
+    15% {
+        opacity: 1;
+        top: 50%;
+    }
+    50% {
+        opacity: 0;
+        top: 50%;
+    }
+    100% {
+        opacity: 0;
+        top: 29%;
+    }
+}
+@keyframes ani-mouse {
+    0% {
+        opacity: 1;
+        top: 29%;
+    }
+    15% {
+        opacity: 1;
+        top: 50%;
+    }
+    50% {
+        opacity: 0;
+        top: 50%;
+    }
+    100% {
+        opacity: 0;
+        top: 29%;
+    }
+}
+.scroll-btn {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 10px;
+    text-align: center;
+}
+.scroll-btn > * {
+    display: inline-block;
+    line-height: 18px;
+    font-size: 13px;
+    font-weight: normal;
+    color: #7f8c8d;
+    color: #ffffff;
+    font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    letter-spacing: 2px;
+}
+.scroll-btn > *:hover,
+.scroll-btn > *:focus,
+.scroll-btn > *.active {
+    color: #ffffff;
+}
+.scroll-btn > *:hover,
+.scroll-btn > *:focus,
+.scroll-btn > *:active,
+.scroll-btn > *.active {
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+}
+.scroll-btn .mouse {
+    position: relative;
+    display: block;
+    width: 35px;
+    height: 55px;
+    margin: 0 auto 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 3px solid white;
+    border-radius: 23px;
+}
+.scroll-btn .mouse > * {
+    position: absolute;
+    display: block;
+    top: 29%;
+    left: 50%;
+    width: 8px;
+    height: 8px;
+    margin: -4px 0 0 -4px;
+    background: white;
+    border-radius: 50%;
+    -webkit-animation: ani-mouse 2.5s linear infinite;
+    -moz-animation: ani-mouse 2.5s linear infinite;
+    animation: ani-mouse 2.5s linear infinite;
+}
+
+/*Social buttons in social slide style animation and other*/
 .socialBtn img {
     width: 100px;
     height: 100px;
-
+    border-radius: 100%;
+    padding: 0;
+    border: 1px solid #FFF;
+    margin: 5px;
+    transition: 0.2s;
+}
+.socialBtn:hover img {
+    border: 5px solid #FFF;
+    transition: 0.2s;
 }
 
-#contact {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    margin-left: 15%;
-    margin-right: 15%;
-
-}
-
+/*My photo style? in about slide*/
 #avatar {
     width: 50%;
     max-width: 460px;
@@ -60,32 +180,7 @@ h1 {
     border: 3px solid #5c5b5b;
 }
 
-.btn {
-    text-decoration: none;
-    padding: 5px 15px;
-    border-radius: 15px;
-    border: 1px solid #FFF;
-    transition: .2s;;
-
-}
-
-.btn:hover {
-    background: #FFF;
-    color: #16a085;
-    transition: 0.2s;
-}
-
-.triangle {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    z-index: 11111;
-    border: 40px solid transparent;
-    border-bottom: 40px solid #151513;
-    border-left: 40px solid #151513;
-}
-
-
+/*TV containers*/
 .tv_container_pixel-2-xl {
     display: flex;
     background: url(../img/gadgets/pixel-2-xl.png) no-repeat top left transparent;
@@ -96,7 +191,6 @@ h1 {
     margin-top: 15px;
     cursor: pointer;
 }
-
 .tv_container_pixel-2-xl video {
     position: absolute;
     top: 31px;
@@ -104,5 +198,3 @@ h1 {
     width: 210px;
     border-radius: 9px;
 }
-
-

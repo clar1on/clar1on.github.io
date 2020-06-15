@@ -20,6 +20,7 @@
 
 
     <!-- styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/jquery.pagepiling.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/slides.css">
@@ -68,9 +69,19 @@
     <!-- hello section -->
     <div class="section hello-slide text-center text-uppercase">
         <div class="container">
-            <h1> Привіт, вас вітає моя сторінка-портфоліо</h1>
-            <h4> Ім'я Nick Hlushpenko</h4>
-            <h4> Спеціальність: Front-end & SEO</h4>
+            <h1> Сторінка-портфоліо</h1>
+            <h2> Nick Hlushpenko</h2>
+            <h4> Front-end & SEO</h4>
+
+
+            <!--scroll animated icon-->
+            <span class="scroll-btn">
+                    <span class="mouse">
+                        <span>_</span>
+                    </span>
+            </span>
+
+
         </div>
     </div>
 
@@ -78,9 +89,9 @@
     <!-- about me section -->
     <div class="section about-slide text-center text-uppercase">
         <div class="container">
-            <img id="avatar" src="img/avatar.jpg" loading="lazy" alt="Моє фото">
+            <img id="avatar" src="img/avatar.jpg" alt="Моє фото">
         </div>
-        <h1>Коротко про мене</h1>
+        <h2>Коротко про мене</h2>
         <h4>Я з України, мені 20.
             Маю досвід роботи з CMS: WordPress, Joomla, OpenCart.
             Є досвід роботи з стеком React.js, Redux, ES6.
@@ -91,9 +102,9 @@
 
     <div class="section clarionio-slide text-center text-uppercase">
         <div class="container">
-            <h1>ФГ КраснаРодина</h1>
+            <h2>ФГ КраснаРодина</h2>
             <h4>Сайт-каталог на базі CMS WordPress</h4>
-            <div class="hidden-xs tv_container_pixel-2-xl" loading="lazy"
+            <div class="hidden-xs tv_container_pixel-2-xl"
                  onclick=" location.href='http://krasnarodyna.com';">
                 <video class="video" preload="auto" autoplay loop muted>
                     <!--                    <source src="videos/krasnarodyna.com/krasnarodyna.com.mp4" type="video/mp4">-->
@@ -106,9 +117,9 @@
 
     <div class="section krasnarodyna-slide text-center text-uppercase">
         <div class="container">
-            <h1>CLARONIO</h1>
+            <h2>CLARONIO</h2>
             <h4>Магазин офісної техніки на базі OpenCart</h4>
-            <div class="hidden-xs tv_container_pixel-2-xl" loading="lazy"
+            <div class="hidden-xs tv_container_pixel-2-xl"
                  onclick="location.href='http://clarionio.beget.tech';">
                 <video class="video" preload="auto" autoplay loop muted>
                     <!--                    <source src="videos/clarionio.beget.tech/clarionio.beget.tech.mp4" type="video/mp4">-->
@@ -121,16 +132,22 @@
 
     <!-- contact section -->
     <div class="section contact-slide text-center text-uppercase">
-        <h1>Написати мені:</h1>
-        <div class="container" id="contact">
-            <a href="mailto:nick.hlushpenko@gmail.com" class="socialBtn"><img src="img/email.png" loading="lazy"
-                                                                              alt="E-Mail"></a>
-            <a href="https://github.com/hlushpenko" class="socialBtn"><img src="img/github.png" loading="lazy"
-                                                                           alt="GitHub"></a>
-            <a href="https://www.facebook.com/nick.hlushpenko" class="socialBtn"><img src="img/facebook.png"
-                                                                                      loading="lazy"
-                                                                                      alt="Facebook"></a>
-            <a href="https://t.me/nick_hlushpenko" class="socialBtn"><img src="img/telegram.png" alt="Telegram"></a>
+        <div class="container">
+            <h1>Написати мені:</h1>
+            <h4><a href="mailto:nick.hlushpenko@gmail.com" class="email">nick.hlushpenko@gmail.com</a></h4>
+
+            <a href="https://www.facebook.com/nick.hlushpenko" class="socialBtn">
+                <img src="img/svg-icons/facebook.svg"
+                                       alt="Facebook">
+            </a>
+
+            <a href="https://t.me/nick_hlushpenko" class="socialBtn">
+                <img src="img/svg-icons/telegram.svg" alt="Telegram">
+            </a>
+
+            <a href="https://www.pinterest.com/hlushpenko/boards/" class="socialBtn">
+                <img src="img/svg-icons/pinterest.svg" alt="Pinterest">
+            </a>
         </div>
     </div>
 </div>
