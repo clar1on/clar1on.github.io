@@ -1,6 +1,7 @@
-$(document).ready(function() {
+$(document).ready(function () {
     $('#pagepiling').pagepiling({
-      afterRender: function(){
-    }
-});
+        navigation: {
+            tooltips: ['Головний слайд', 'Про мене', 'ФГ КраснаРодина', 'CLARIONIO', 'Контактна інформація']
+        }
+    });
 });
