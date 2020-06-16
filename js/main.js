@@ -5,8 +5,8 @@ $(document).ready(function () {
         navigation: {
             tooltips: ['Головний слайд', 'Про мене', 'ФГ КраснаРодина', 'CLARIONIO', 'Контактна інформація'],
         },
-        loopTop: true,
-        loopBottom: true
+        // loopTop: true,
+        // loopBottom: true
     });
 
 
