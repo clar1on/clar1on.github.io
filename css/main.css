@@ -275,6 +275,43 @@ h1, h2 {
 }
 
 
+
+
+.tv_container_laptop {
+    display: flex;
+    background: url(../img/gadgets/laptop-lenovo.webp) no-repeat top left transparent;
+    width: 725px;
+    height: 515px;
+    position: relative;
+    margin: 15px auto auto;
+    cursor: pointer;
+}
+
+
+.tv_container_laptop video {
+    position: absolute;
+    top: 105px;
+    left: 141px;
+    width: 442px;;
+}
+
+@media screen and (max-width: 1024px){
+    .hide-mobile{
+        visibility: hidden;
+        display: none;
+    }
+}
+
+
+@media screen and (min-width: 1024px){
+    .hide-full{
+        visibility: hidden;
+        display: none;
+    }
+}
+
+
+
 /* Menu*/
 .hamburger-menu {
     position: absolute;
