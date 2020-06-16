@@ -8,4 +8,11 @@ $(document).ready(function () {
         loopTop: true,
         loopBottom: true
     });
+
+
 });
+
+function closeMenuToggle() {
+   document.getElementById("menu__toggle").click();
+}
+

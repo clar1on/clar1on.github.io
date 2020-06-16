@@ -4,23 +4,28 @@
     font-weight: 100;
     font-style: normal;
 }
+
 * {
     font-family: 'Varela Round', sans-serif;
 }
+
 a {
     color: #FFF;
     text-transform: uppercase;
     text-decoration: none;
 }
+
 a:hover {
     text-decoration: none;
 }
+
 h4 {
     font-weight: 100;
     color: #FFF;
     text-align: center;
     line-height: 150%;
 }
+
 h1, h2 {
     padding-right: 10%;
     padding-left: 10%;
@@ -39,6 +44,7 @@ h1, h2 {
 .github-corner:hover .octo-arm {
     animation: octocat-wave 560ms ease-in-out
 }
+
 @keyframes octocat-wave {
     0%, 100% {
         transform: rotate(0)
@@ -50,6 +56,7 @@ h1, h2 {
         transform: rotate(10deg)
     }
 }
+
 @media (max-width: 540px) {
     .github-corner:hover .octo-arm {
         animation: none
@@ -100,6 +107,7 @@ h1, h2 {
         top: 29%;
     }
 }
+
 @-moz-keyframes ani-mouse {
     0% {
         opacity: 1;
@@ -118,6 +126,7 @@ h1, h2 {
         top: 29%;
     }
 }
+
 @keyframes ani-mouse {
     0% {
         opacity: 1;
@@ -136,6 +145,7 @@ h1, h2 {
         top: 29%;
     }
 }
+
 .scroll-btn {
     display: block;
     position: absolute;
@@ -144,6 +154,7 @@ h1, h2 {
     bottom: 10px;
     text-align: center;
 }
+
 .scroll-btn > * {
     display: inline-block;
     line-height: 18px;
@@ -154,11 +165,13 @@ h1, h2 {
     font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
     letter-spacing: 2px;
 }
+
 .scroll-btn > *:hover,
 .scroll-btn > *:focus,
 .scroll-btn > *.active {
     color: #ffffff;
 }
+
 .scroll-btn > *:hover,
 .scroll-btn > *:focus,
 .scroll-btn > *:active,
@@ -166,6 +179,7 @@ h1, h2 {
     opacity: 0.8;
     filter: alpha(opacity=80);
 }
+
 .scroll-btn .mouse {
     position: relative;
     display: block;
@@ -178,6 +192,7 @@ h1, h2 {
     border: 3px solid white;
     border-radius: 23px;
 }
+
 .scroll-btn .mouse > * {
     position: absolute;
     display: block;
@@ -203,6 +218,7 @@ h1, h2 {
     margin: 5px;
     transition: 0.2s;
 }
+
 .socialBtn:hover img {
     border: 5px solid #FFF;
     transition: 0.2s;
@@ -214,7 +230,6 @@ h1, h2 {
     width: 50%;
     max-width: 460px;
     max-height: 460px;
-
     border-radius: 100%;
     display: flex;
     margin: auto;
@@ -228,18 +243,16 @@ h1, h2 {
     width: 240px;
     height: 480px;
     position: relative;
-    margin: auto;
-    margin-top: 15px;
+    margin: 15px auto auto;
     cursor: pointer;
 }
 
 @media (max-width: 320px) {
-    .tv_container_pixel-2-xl{
+    .tv_container_pixel-2-xl {
         background: url(../img/gadgets/pixel-2-xl-little.png) no-repeat top left transparent;
         width: 200px;
         height: 400px;
     }
-
 }
 
 .tv_container_pixel-2-xl video {
@@ -257,14 +270,11 @@ h1, h2 {
         width: 177px;
         border-radius: 7px;
     }
-
 }
 
 
-
-
 /* Menu*/
-.hamburger-menu{
+.hamburger-menu {
     position: absolute;
     z-index: 7;
 }
@@ -277,14 +287,17 @@ h1, h2 {
 #menu__toggle:checked ~ .menu__btn > span {
     transform: rotate(45deg);
 }
+
 #menu__toggle:checked ~ .menu__btn > span::before {
     top: 0;
     transform: rotate(0);
 }
+
 #menu__toggle:checked ~ .menu__btn > span::after {
     top: 0;
     transform: rotate(90deg);
 }
+
 #menu__toggle:checked ~ .menu__box {
     visibility: visible;
     left: 0;
@@ -315,10 +328,12 @@ h1, h2 {
 
     transition-duration: .25s;
 }
+
 .menu__btn > span::before {
     content: '';
     top: -8px;
 }
+
 .menu__btn > span::after {
     content: '';
     top: 8px;
@@ -353,6 +368,7 @@ h1, h2 {
 
     transition-duration: .25s;
 }
+
 .menu__item:hover {
     background-color: rgba(255, 255, 255, 0.3333);
 }
