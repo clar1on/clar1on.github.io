@@ -230,8 +230,8 @@ h1, h2 {
 /*My photo style? in about slide*/
 #avatar {
     width: 50%;
-    max-width: 460px;
-    max-height: 460px;
+    max-width: 200px;
+    max-height: 200px;
     border-radius: 100%;
     display: flex;
     margin: auto;
