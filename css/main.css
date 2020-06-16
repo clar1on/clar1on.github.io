@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Varela+Round');
 
 @font-face {
     font-family: 'Varela Round';
@@ -41,32 +42,6 @@ h1, h2 {
     width: 100px;
     height: 100px;
 
-}
-
-
-/*Github triangle*/
-.github-corner:hover .octo-arm {
-    animation: octocat-wave 560ms ease-in-out
-}
-@keyframes octocat-wave {
-    0%, 100% {
-        transform: rotate(0)
-    }
-    20%, 60% {
-        transform: rotate(-25deg)
-    }
-    40%, 80% {
-        transform: rotate(10deg)
-    }
-}
-@media (max-width: 500px) {
-    .github-corner:hover .octo-arm {
-        animation: none
-    }
-
-    .github-corner .octo-arm {
-        animation: octocat-wave 560ms ease-in-out
-    }
 }
 
 /*Dark triangle in left-down */
@@ -152,7 +127,7 @@ h1, h2 {
     line-height: 18px;
     font-size: 13px;
     font-weight: normal;
-    /*color: #7f8c8d;*/
+    color: #7f8c8d;
     color: #ffffff;
     font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
     letter-spacing: 2px;
@@ -246,51 +221,4 @@ h1, h2 {
     left: 13px;
     width: 210px;
     border-radius: 9px;
-}
-
-
-
-/* Menu
- * --------------------------------------- */
-#menu li {
-    display:inline-block;
-    margin: 10px;
-    color: #000;
-    background:#fff;
-    background: rgba(255,255,255, 0.5);
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
-}
-#menu li.active{
-    background:#666;
-    background: rgba(0,0,0, 0.5);
-    color: #fff;
-}
-#menu li a{
-    text-decoration:none;
-    color: #000;
-}
-#menu li.active a:hover{
-    color: #000;
-}
-#menu li:hover{
-    background: rgba(255,255,255, 0.8);
-}
-#menu li a,
-#menu li.active a{
-    padding: 9px 18px;
-    display:block;
-}
-#menu li.active a{
-    color: #fff;
-}
-#menu{
-    position:fixed;
-    top:0;
-    left:0;
-    height: 40px;
-    z-index: 70;
-    width: 100%;
-    padding: 0;
-    margin:0;
 }

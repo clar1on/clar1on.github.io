@@ -37,24 +37,37 @@
               fill="currentColor" class="octo-body"></path>
     </svg>
 </a>
+<style>.github-corner:hover .octo-arm {
+    animation: octocat-wave 560ms ease-in-out
+}
+@keyframes octocat-wave {
+    0%, 100% {
+        transform: rotate(0)
+    }
+    20%, 60% {
+        transform: rotate(-25deg)
+    }
+    40%, 80% {
+        transform: rotate(10deg)
+    }
+}
+@media (max-width: 500px) {
+    .github-corner:hover .octo-arm {
+        animation: none
+    }
 
+    .github-corner .octo-arm {
+        animation: octocat-wave 560ms ease-in-out
+    }
+}</style>
 
 <div class="triangle"></div>
 
 <div id="pagepiling">
 
-    <ul id="menu">
-        <li data-menuanchor="head" class="active"><a href="#head">Початковий слайд</a></li>
-        <li data-menuanchor="about"><a href="#about">Коротко про мене</a></li>
-        <li data-menuanchor="krasnarodyna"><a href="#krasnarodyna">ФГ КраснаРодина</a></li>
-        <li data-menuanchor="clarionio"><a href="#clarionio">CLARIONIO</a></li>
-        <li data-menuanchor="contact"><a href="#contact">Контактна інформація</a></li>
-    </ul>
-
-
     <!-- hello section -->
     <div class="section hello-slide text-center text-uppercase">
-        <div class="container" id="head">
+        <div class="container">
             <h1> Сторінка-портфоліо</h1>
             <h2> Nick Hlushpenko</h2>
             <h4> Front-end & SEO</h4>
@@ -65,7 +78,7 @@
                     <span class="mouse">
                         <span></span>
                     </span>
-                <span>Перегорни мене</span>
+                <p>Перегорни мене</p>
             </span>
 
 
@@ -75,7 +88,7 @@
 
     <!-- about me section -->
     <div class="section about-slide text-center text-uppercase">
-        <div class="container" id="about">
+        <div class="container">
             <img id="avatar" src="img/avatar.jpg" alt="Моє фото">
         </div>
         <h2>Коротко про мене</h2>
@@ -87,8 +100,8 @@
     </div>
 
 
-    <div class="section krasnarodyna-slide text-center text-uppercase">
-        <div class="container" id="krasnarodyna">
+    <div class="section clarionio-slide text-center text-uppercase">
+        <div class="container">
             <h2>ФГ КраснаРодина</h2>
             <h4>Сайт-каталог на базі CMS WordPress</h4>
             <div class="hidden-xs tv_container_pixel-2-xl"
@@ -102,8 +115,8 @@
     </div>
 
 
-    <div class="section clarionio-slide text-center text-uppercase">
-        <div class="container" id="clarionio">
+    <div class="section krasnarodyna-slide text-center text-uppercase">
+        <div class="container">
             <h2>CLARONIO</h2>
             <h4>Магазин офісної техніки на базі OpenCart</h4>
             <div class="hidden-xs tv_container_pixel-2-xl"
@@ -119,7 +132,7 @@
 
     <!-- contact section -->
     <div class="section contact-slide text-center text-uppercase">
-        <div class="container" id="contact">
+        <div class="container">
             <h1>Написати мені:</h1>
             <h4><a href="mailto:nick.hlushpenko@gmail.com" class="email">nick.hlushpenko@gmail.com</a></h4>
 
@@ -146,5 +159,8 @@
 <script src="js/jquery.pagepiling.min.js"></script>
 <script src="js/canvas-video-player.js"></script>
 <script src="js/main.js"></script>
+
+<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+
 </body>
 </html>
