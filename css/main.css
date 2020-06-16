@@ -232,12 +232,32 @@ h1, h2 {
     margin-top: 15px;
     cursor: pointer;
 }
+
+@media (max-width: 320px) {
+    .tv_container_pixel-2-xl{
+        background: url(../img/gadgets/pixel-2-xl-little.png) no-repeat top left transparent;
+        width: 200px;
+        height: 400px;
+    }
+
+}
+
 .tv_container_pixel-2-xl video {
     position: absolute;
     top: 31px;
     left: 13px;
     width: 210px;
     border-radius: 9px;
+}
+
+@media (max-width: 320px) {
+    .tv_container_pixel-2-xl video {
+        top: 25px;
+        left: 11px;
+        width: 177px;
+        border-radius: 7px;
+    }
+
 }
 
 
