@@ -36,17 +36,12 @@ h1, h2 {
     text-align: center;
 }
 
-.socialBtn img {
-    width: 100px;
-    height: 100px;
 
-}
 
 /*Github triangle*/
 .github-corner:hover .octo-arm {
     animation: octocat-wave 560ms ease-in-out
 }
-
 @keyframes octocat-wave {
     0%, 100% {
         transform: rotate(0)
@@ -58,7 +53,6 @@ h1, h2 {
         transform: rotate(10deg)
     }
 }
-
 @media (max-width: 540px) {
     .github-corner:hover .octo-arm {
         animation: none
@@ -80,7 +74,13 @@ h1, h2 {
     border-left: 40px solid #151513;
 }
 
+
+
 /*Contact icons*/
+.socialBtn img {
+    width: 100px;
+    height: 100px;
+}
 .container#contact {
     display: flex;
     flex-wrap: wrap;
@@ -88,6 +88,8 @@ h1, h2 {
     align-items: center;
     align-content: center;
 }
+
+
 
 
 /*Scroll animated icon*/
@@ -109,7 +111,6 @@ h1, h2 {
         top: 29%;
     }
 }
-
 @-moz-keyframes ani-mouse {
     0% {
         opacity: 1;
@@ -128,7 +129,6 @@ h1, h2 {
         top: 29%;
     }
 }
-
 @keyframes ani-mouse {
     0% {
         opacity: 1;
@@ -147,7 +147,6 @@ h1, h2 {
         top: 29%;
     }
 }
-
 .scroll-btn {
     display: block;
     position: absolute;
@@ -156,7 +155,6 @@ h1, h2 {
     bottom: 10px;
     text-align: center;
 }
-
 .scroll-btn > * {
     display: inline-block;
     line-height: 18px;
@@ -167,13 +165,11 @@ h1, h2 {
     font-family: "proxima-nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
     letter-spacing: 2px;
 }
-
 .scroll-btn > *:hover,
 .scroll-btn > *:focus,
 .scroll-btn > *.active {
     color: #ffffff;
 }
-
 .scroll-btn > *:hover,
 .scroll-btn > *:focus,
 .scroll-btn > *:active,
@@ -181,7 +177,6 @@ h1, h2 {
     opacity: 0.8;
     filter: alpha(opacity=80);
 }
-
 .scroll-btn .mouse {
     position: relative;
     display: block;
@@ -194,7 +189,6 @@ h1, h2 {
     border: 3px solid white;
     border-radius: 23px;
 }
-
 .scroll-btn .mouse > * {
     position: absolute;
     display: block;
@@ -210,6 +204,8 @@ h1, h2 {
     animation: ani-mouse 2.5s linear infinite;
 }
 
+
+
 /*Social buttons in social slide style animation and other*/
 .socialBtn img {
     width: 100px;
@@ -220,12 +216,13 @@ h1, h2 {
     margin: 5px;
     transition: 0.2s;
 }
-
 .socialBtn:hover img {
     border: 5px solid #FFF;
     transition: 0.2s;
     margin: 1px;
 }
+
+
 
 /*My photo style? in about slide*/
 #avatar {
@@ -238,6 +235,8 @@ h1, h2 {
     border: 3px solid #5c5b5b;
 }
 
+
+
 /*TV containers*/
 .tv_container_pixel-2-xl {
     display: flex;
@@ -248,7 +247,6 @@ h1, h2 {
     margin: 15px auto auto;
     cursor: pointer;
 }
-
 @media (max-width: 320px) {
     .tv_container_pixel-2-xl {
         background: url(../img/gadgets/pixel-2-xl-little.png) no-repeat top left transparent;
@@ -256,15 +254,13 @@ h1, h2 {
         height: 400px;
     }
 }
-
 .tv_container_pixel-2-xl video {
     position: absolute;
-    top: 31px;
+    top: 32px;
     left: 13px;
     width: 210px;
     border-radius: 9px;
 }
-
 @media (max-width: 320px) {
     .tv_container_pixel-2-xl video {
         top: 25px;
@@ -273,7 +269,6 @@ h1, h2 {
         border-radius: 7px;
     }
 }
-
 
 
 
@@ -286,8 +281,6 @@ h1, h2 {
     margin: 15px auto auto;
     cursor: pointer;
 }
-
-
 .tv-container-laptop-mid video {
     position: absolute;
     top: 25px;
@@ -295,21 +288,42 @@ h1, h2 {
     width: 676px;
 }
 
-@media screen and (max-width: 1024px){
+
+
+.tv-container-laptop-big {
+    display: flex;
+    background: url(../img/gadgets/macbook-big.png) no-repeat top left transparent;
+    width: 1200px;
+    height: 685px;
+    position: relative;
+    margin: 15px auto auto;
+    cursor: pointer;
+}
+.tv-container-laptop-big video {
+    position: absolute;
+    top: 40px;
+    left: 95px;
+    width: 1010px;
+}
+
+
+
+
+
+/*change container-device type rules*/
+@media only screen and (max-width: 800px){
     .hide-mobile{
         visibility: hidden;
         display: none;
     }
 }
-
-@media screen and (min-width: 1024px){
+@media only screen and (min-width: 801px) and (max-width: 1199px){
     .hide-mid{
         visibility: hidden;
         display: none;
     }
 }
-
-@media screen and (max-width: 1200px){
+@media only screen and (min-width: 1200px){
     .hide-big{
         visibility: hidden;
         display: none;
@@ -323,31 +337,24 @@ h1, h2 {
     position: absolute;
     z-index: 7;
 }
-
-
 #menu__toggle {
     opacity: 0;
 }
-
 #menu__toggle:checked ~ .menu__btn > span {
     transform: rotate(45deg);
 }
-
 #menu__toggle:checked ~ .menu__btn > span::before {
     top: 0;
     transform: rotate(0);
 }
-
 #menu__toggle:checked ~ .menu__btn > span::after {
     top: 0;
     transform: rotate(90deg);
 }
-
 #menu__toggle:checked ~ .menu__box {
     visibility: visible;
     right: 0;
 }
-
 .menu__btn {
     display: flex;
     align-items: center;
@@ -359,7 +366,6 @@ h1, h2 {
     cursor: pointer;
     z-index: 112;
 }
-
 .menu__btn > span,
 .menu__btn > span::before,
 .menu__btn > span::after {
@@ -373,17 +379,14 @@ h1, h2 {
 
     transition-duration: .25s;
 }
-
 .menu__btn > span::before {
     content: '';
     top: -8px;
 }
-
 .menu__btn > span::after {
     content: '';
     top: 8px;
 }
-
 .menu__box {
     display: block;
     position: fixed;
@@ -398,7 +401,6 @@ h1, h2 {
     background-color: #151513;
     transition-duration: .25s;
 }
-
 .menu__item {
     display: block;
     padding: 12px 24px;
@@ -413,7 +415,6 @@ h1, h2 {
 
     transition-duration: .25s;
 }
-
 .menu__item:hover {
     background-color: rgba(255, 255, 255, 0.3333);
 }
