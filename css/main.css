@@ -279,9 +279,9 @@ h1, h2 {
 
 .tv_container_laptop {
     display: flex;
-    background: url(../img/gadgets/laptop-lenovo.webp) no-repeat top left transparent;
-    width: 725px;
-    height: 515px;
+    background: url(../img/gadgets/macbook.png) no-repeat top left transparent;
+    width: 800px;
+    height: 456px;
     position: relative;
     margin: 15px auto auto;
     cursor: pointer;
@@ -290,9 +290,9 @@ h1, h2 {
 
 .tv_container_laptop video {
     position: absolute;
-    top: 105px;
-    left: 141px;
-    width: 442px;;
+    top: 25px;
+    left: 62px;
+    width: 676px;
 }
 
 @media screen and (max-width: 1024px){
