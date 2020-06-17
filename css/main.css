@@ -277,7 +277,7 @@ h1, h2 {
 
 
 
-.tv_container_laptop {
+.tv-container-laptop-mid {
     display: flex;
     background: url(../img/gadgets/macbook.png) no-repeat top left transparent;
     width: 800px;
@@ -288,7 +288,7 @@ h1, h2 {
 }
 
 
-.tv_container_laptop video {
+.tv-container-laptop-mid video {
     position: absolute;
     top: 25px;
     left: 62px;
@@ -302,9 +302,15 @@ h1, h2 {
     }
 }
 
-
 @media screen and (min-width: 1024px){
-    .hide-full{
+    .hide-mid{
+        visibility: hidden;
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .hide-big{
         visibility: hidden;
         display: none;
     }
