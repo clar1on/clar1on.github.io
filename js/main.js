@@ -1,9 +1,9 @@
 $(document).ready(function () {
     $('#pagepiling').pagepiling({
         menu: '#menu',
-        anchors: ['head', 'about', 'soft-skills', 'krasnarodyna', 'clarionio', 'berizka' , 'contact'],
+        anchors: ['head', 'about', 'soft-skills', 'hard-skills', 'krasnarodyna', 'clarionio', 'berizka' , 'contact'],
         navigation: {
-            tooltips: ['Головний слайд', 'Про мене', 'Особисті якості', 'ФГ КраснаРодина', 'CLARIONIO', 'BERIZKA', 'Контактна інформація'],
+            tooltips: ['Головний слайд', 'Про мене', 'Особисті якості', 'Технічні навички', 'ФГ КраснаРодина', 'CLARIONIO', 'BERIZKA', 'Контактна інформація'],
         }
     });
 

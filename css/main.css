@@ -472,16 +472,14 @@ h1, h2 {
 }
 
 
-
-
 /*CHARTS*/
 
-.chart-text{
+.chart-text {
     color: #ffffff;
     font-size: 20px;
     font-weight: 100;
     margin: 0;
-   text-transform: uppercase;
+    text-transform: uppercase;
 }
 
 .bar-container {
@@ -491,14 +489,13 @@ h1, h2 {
 }
 
 .bar {
-    height: 25px;
+    height: 10px;
     background: #ffffff;
     width: 100%;
     position: relative;
-    margin: 10px 0;
+    margin: 15px 0;
     z-index: 113;
-
-
+    border-radius: 15px;
 
 
 }
@@ -506,14 +503,14 @@ h1, h2 {
 .bar::after {
     content: '';
     position: absolute;
-    top: 0;
+    top: -10px;
     left: 0;
     width: 0;
     background: var(--bar-color);
     z-index: 2;
-    height: 100%;
-    animation: width 0.8s ease-in-out forwards;
-
+    height: 30px;
+    animation: width 1s ease-in-out forwards;
+    border-radius: 15px;
 
 
 }
