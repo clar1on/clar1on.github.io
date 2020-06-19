@@ -235,12 +235,17 @@ h1, h2 {
     border: 3px solid #5c5b5b;
 }
 
-
-
-
+/*GIF in First Slide*/
 .first-slide-gif{
     display: flex;
     margin: 1em auto auto;
+}
+@media (max-height: 800px) {
+    .first-slide-gif{
+        visibility: hidden;
+        display: none;
+    }
+
 }
 
 
@@ -279,7 +284,6 @@ h1, h2 {
 
 
 
-
 .tv-container-tablet {
     display: flex;
     background: url(../img/gadgets/ipad.png) no-repeat top left transparent;
@@ -295,6 +299,7 @@ h1, h2 {
     left: 49px;
     width: 347px;
 }
+
 
 
 
@@ -363,6 +368,7 @@ h1, h2 {
         display: none;
     }
 }
+
 
 
 
@@ -452,7 +458,5 @@ h1, h2 {
 .menu__item:hover {
     background-color: rgba(255, 255, 255, 0.3333);
 }
-
-
 
 
