@@ -23,6 +23,8 @@
     <link rel="stylesheet" type="text/css" href="css/jquery.pagepiling.css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link rel="stylesheet" type="text/css" href="css/slides.css">
+
+
 </head>
 <body>
 <!--Трикутник GitHub-->
@@ -50,8 +52,11 @@
     <ul class="menu__box">
         <li><a class="menu__item" onclick="closeMenuToggle()" href="#head">Головна</a></li>
         <li><a class="menu__item" onclick="closeMenuToggle()" href="#about">Про мене</a></li>
-        <li><a class="menu__item" onclick="closeMenuToggle()" href="#krasnarodyna">Сайт ФГ КраснаРодина</a></li>
-        <li><a class="menu__item" onclick="closeMenuToggle()" href="#clarionio">clarionio</a></li>
+        <HR>
+        <li><a class="menu__item" onclick="closeMenuToggle()" href="#krasnarodyna">ФГ КраснаРодина</a></li>
+        <li><a class="menu__item" onclick="closeMenuToggle()" href="#clarionio">CLARIONIO</a></li>
+        <li><a class="menu__item" onclick="closeMenuToggle()" href="#berizka">BERIZKA</a></li>
+        <HR>
         <li><a class="menu__item" onclick="closeMenuToggle()" href="#contact">Контактна інформація</a></li>
     </ul>
 </div>
@@ -59,7 +64,8 @@
 
 <div id="pagepiling">
 
-    <!-- hello section -->
+
+    <!-- HELLO SECTION -->
     <div class="section hello-slide text-center text-uppercase">
         <div class="container" id="head">
             <h1> Сторінка-портфоліо</h1>
@@ -78,8 +84,7 @@
         </div>
     </div>
 
-
-    <!-- about me section -->
+    <!-- ABOUT-ME SECTION -->
     <div class="section about-slide text-center text-uppercase">
         <div class="container" id="about">
             <img id="avatar" src="img/avatar.jpg" alt="Моє фото">
@@ -93,216 +98,215 @@
         </h4>
     </div>
 
-<!--KRASNARODYNA SECTION-->
-    <div class="section krasnarodyna-slide text-center text-uppercase">
-        <div class="container" id="krasnarodyna">
-            <h2>ФГ КраснаРодина</h2>
-            <h4>Сайт-каталог на базі CMS WordPress</h4>
-
-            <!--            MOBILE-->
-            <div class="hide-tab hide-mid hide-big tv-container-mobile"
-                 onclick=" location.href='http://krasnarodyna.com';">
-                <video class="video" preload="auto" autoplay loop muted>
-                    <source src="videos/krasnarodyna.com/krasnarodyna-mobile.webm" type="video/webm">
-                </video>
-            </div>
+    <!--    SOFT-SKILLS SECTION-->
+    <div class="section soft-skills-slide text-center text-uppercase">
+        <h2>Особисті якості</h2>
+        <div class="container" id="soft-skills">
 
 
-            <!--            TABLET-->
-            <div class="hide-mobile hide-mid hide-big tv-container-tablet"
-                 onclick=" location.href='http://krasnarodyna.com';">
-                <video class="video" preload="auto" autoplay loop muted>
-                    <source src="videos/krasnarodyna.com/krasnarodyna-tablet.webm" type="video/webm">
-                </video>
-            </div>
+
+            <div class="bar-container">
 
 
-            <!--            MID-LAPTOP-->
-            <div class="hide-mobile hide-tab hide-big tv-container-laptop-mid"
-                 onclick=" location.href='http://krasnarodyna.com';">
-                <video class="video" preload="auto" autoplay loop muted>
-                    <source src="videos/krasnarodyna.com/krasnarodyna-laptop.webm" type="video/webm">
-                </video>
-            </div>
+                <p class="chart-text">творчий підхід у вирішенні поставлених завдань</p>
+                <div class="bar"
+                     style="--bar-width: 75%;
+                            --bar-color: #75b9c4;">
+                </div>
 
 
-            <!--            LARGE-LAPTOP--->
-            <div class="hide-mobile hide-tab hide-mid tv-container-laptop-big"
-                 onclick=" location.href='http://krasnarodyna.com';">
-                <video class="video" preload="auto" autoplay loop muted>
-                    <source src="videos/krasnarodyna.com/krasnarodyna-laptop.webm" type="video/webm">
-                </video>
+                <p class="chart-text">вміння працювати в команді</p>
+                <div class="bar"
+                     style="--bar-width: 80%;
+                            --bar-color: #a37293;">
+                </div>
+
+
+                <p class="chart-text">стресостійкість</p>
+                <div class="bar"
+                     style="--bar-width: 95%;
+                            --bar-color: #79668d;">
+                </div>
+
+
+                <p class="chart-text">активність</p>
+                <div class="bar"
+                     style="--bar-width: 75%;
+                            --bar-color: #5d4f6d;">
+                </div>
+
+
+                <p class="chart-text">гнучкість до навчання</p>
+                <div class="bar"
+                     style="--bar-width: 90%;
+                            --bar-color: #668290;">
+                </div>
+
+
+
             </div>
 
         </div>
     </div>
+</div>
 
 
+<!--    KRASNARODYNA SECTION-->
+<div class="section krasnarodyna-slide text-center text-uppercase">
+    <div class="container" id="krasnarodyna">
+        <h2>ФГ КраснаРодина</h2>
+        <h4>Сайт-каталог на базі CMS WordPress</h4>
+
+        <!--            MOBILE-->
+        <div class="hide-tab hide-mid hide-big tv-container-mobile"
+             onclick=" location.href='http://krasnarodyna.com';">
+            <video class="video" preload="auto" autoplay loop muted>
+                <source src="videos/krasnarodyna.com/krasnarodyna-mobile.webm" type="video/webm">
+            </video>
+        </div>
+
+
+        <!--            TABLET-->
+        <div class="hide-mobile hide-mid hide-big tv-container-tablet"
+             onclick=" location.href='http://krasnarodyna.com';">
+            <video class="video" preload="auto" autoplay loop muted>
+                <source src="videos/krasnarodyna.com/krasnarodyna-tablet.webm" type="video/webm">
+            </video>
+        </div>
+
+
+        <!--            MID-LAPTOP-->
+        <div class="hide-mobile hide-tab hide-big tv-container-laptop-mid"
+             onclick=" location.href='http://krasnarodyna.com';">
+            <video class="video" preload="auto" autoplay loop muted>
+                <source src="videos/krasnarodyna.com/krasnarodyna-laptop.webm" type="video/webm">
+            </video>
+        </div>
+
+
+        <!--            LARGE-LAPTOP--->
+        <div class="hide-mobile hide-tab hide-mid tv-container-laptop-big"
+             onclick=" location.href='http://krasnarodyna.com';">
+            <video class="video" preload="auto" autoplay loop muted>
+                <source src="videos/krasnarodyna.com/krasnarodyna-laptop.webm" type="video/webm">
+            </video>
+        </div>
+
+    </div>
+</div>
 
 <!--    CLARIONIO SECTION-->
-
-    <div class="section clarionio-slide text-center text-uppercase">
-        <div class="container" id="clarionio">
-            <h2>CLARONIO</h2>
-            <h4>Магазин офісної техніки на базі OpenCart</h4>
-
+<div class="section clarionio-slide text-center text-uppercase">
+    <div class="container" id="clarionio">
+        <h2>CLARONIO</h2>
+        <h4>Магазин офісної техніки на базі OpenCart</h4>
 
 
-            <!--            MOBILE-->
-            <div class="hide-tab hide-mid hide-big tv-container-mobile"
-                 onclick="location.href='http://clarionio.beget.tech';">
-                <video class="video" preload="auto" autoplay loop muted>
-                    <source src="videos/clarionio.beget.tech/clarionio-mobile.webm" type="video/webm">
-                </video>
-            </div>
-
-
-            <!--            TABLET-->
-            <div class="hide-mobile hide-mid hide-big tv-container-tablet"
-                 onclick="location.href='http://clarionio.beget.tech';">
-                <video class="video" preload="auto" autoplay loop muted>
-                    <source src="videos/clarionio.beget.tech/clarionio-tablet.webm" type="video/webm">
-                </video>
-            </div>
-
-
-            <!--            MID-LAPTOP-->
-            <div class="hide-mobile hide-tab hide-big tv-container-laptop-mid"
-                 onclick="location.href='http://clarionio.beget.tech';">
-                <video class="video" preload="auto" autoplay loop muted>
-                    <source src="videos/clarionio.beget.tech/clarionio-laptop.webm" type="video/webm">
-                </video>
-            </div>
-
-
-            <!--            LARGE-LAPTOP--->
-            <div class="hide-mobile hide-tab hide-mid tv-container-laptop-big"
-                 onclick="location.href='http://clarionio.beget.tech';">
-                <video class="video" preload="auto" autoplay loop muted>
-                    <source src="videos/clarionio.beget.tech/clarionio-laptop.webm" type="video/webm">
-                </video>
-            </div>
-
-
-
+        <!--            MOBILE-->
+        <div class="hide-tab hide-mid hide-big tv-container-mobile"
+             onclick="location.href='http://clarionio.beget.tech';">
+            <video class="video" preload="auto" autoplay loop muted>
+                <source src="videos/clarionio.beget.tech/clarionio-mobile.webm" type="video/webm">
+            </video>
         </div>
-    </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!--BERIZKA SECTION-->
-    <div class="section berizka-slide text-center text-uppercase">
-        <div class="container" id="berizka">
-            <h2>BERIZKA</h2>
-            <h4>Сайт-магазин на базі CMS Joomla</h4>
-
-            <!--            MOBILE-->
-            <div class="hide-tab hide-mid hide-big tv-container-mobile"
-                 onclick=" location.href='http://berizka.clarionio.beget.tech/';">
-                <video class="video" preload="auto" autoplay loop muted>
-                    <source src="videos/berizka/berizka-mobile.webm" type="video/webm">
-                </video>
-            </div>
-
-
-            <!--            TABLET-->
-            <div class="hide-mobile hide-mid hide-big tv-container-tablet"
-                 onclick=" location.href='http://berizka.clarionio.beget.tech/';">
-                <video class="video" preload="auto" autoplay loop muted>
-                    <source src="videos/berizka/berizka-tablet.webm" type="video/webm">
-                </video>
-            </div>
-
-
-            <!--            MID-LAPTOP-->
-            <div class="hide-mobile hide-tab hide-big tv-container-laptop-mid"
-                 onclick=" location.href='http://berizka.clarionio.beget.tech/';">
-                <video class="video" preload="auto" autoplay loop muted>
-                    <source src="videos/berizka/berizka-laptop.webm" type="video/webm">
-                </video>
-            </div>
-
-            <!--            LARGE-LAPTOP--->
-            <div class="hide-mobile hide-tab hide-mid tv-container-laptop-big"
-                 onclick=" location.href='http://berizka.clarionio.beget.tech/';">
-                <video class="video" preload="auto" autoplay loop muted>
-                    <source src="videos/berizka/berizka-laptop.webm" type="video/webm">
-                </video>
-            </div>
-
-
+        <!--            TABLET-->
+        <div class="hide-mobile hide-mid hide-big tv-container-tablet"
+             onclick="location.href='http://clarionio.beget.tech';">
+            <video class="video" preload="auto" autoplay loop muted>
+                <source src="videos/clarionio.beget.tech/clarionio-tablet.webm" type="video/webm">
+            </video>
         </div>
-    </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <!-- contact section -->
-    <div class="section contact-slide text-center text-uppercase">
-        <h1>Написати мені:</h1>
-        <h4><a href="mailto:nick.hlushpenko@gmail.com" class="email">nick.hlushpenko@gmail.com</a></h4>
-
-        <div class="container" id="contact">
-
-            <a href="https://www.facebook.com/nick.hlushpenko" class="socialBtn">
-                <img src="img/svg-icons/facebook.svg"
-                     alt="Facebook">
-            </a>
-
-            <a href="https://t.me/nick_hlushpenko" class="socialBtn">
-                <img src="img/svg-icons/telegram.svg" alt="Telegram">
-            </a>
-
-            <a href="https://www.pinterest.com/hlushpenko/boards/" class="socialBtn">
-                <img src="img/svg-icons/pinterest.svg" alt="Pinterest">
-            </a>
+        <!--            MID-LAPTOP-->
+        <div class="hide-mobile hide-tab hide-big tv-container-laptop-mid"
+             onclick="location.href='http://clarionio.beget.tech';">
+            <video class="video" preload="auto" autoplay loop muted>
+                <source src="videos/clarionio.beget.tech/clarionio-laptop.webm" type="video/webm">
+            </video>
         </div>
+
+
+        <!--            LARGE-LAPTOP--->
+        <div class="hide-mobile hide-tab hide-mid tv-container-laptop-big"
+             onclick="location.href='http://clarionio.beget.tech';">
+            <video class="video" preload="auto" autoplay loop muted>
+                <source src="videos/clarionio.beget.tech/clarionio-laptop.webm" type="video/webm">
+            </video>
+        </div>
+
+
     </div>
+</div>
+
+<!--    BERIZKA SECTION-->
+<div class="section berizka-slide text-center text-uppercase">
+    <div class="container" id="berizka">
+        <h2>BERIZKA</h2>
+        <h4>Сайт-магазин на базі CMS Joomla</h4>
+
+        <!--            MOBILE-->
+        <div class="hide-tab hide-mid hide-big tv-container-mobile"
+             onclick=" location.href='http://berizka.clarionio.beget.tech/';">
+            <video class="video" preload="auto" autoplay loop muted>
+                <source src="videos/berizka/berizka-mobile.webm" type="video/webm">
+            </video>
+        </div>
+
+
+        <!--            TABLET-->
+        <div class="hide-mobile hide-mid hide-big tv-container-tablet"
+             onclick=" location.href='http://berizka.clarionio.beget.tech/';">
+            <video class="video" preload="auto" autoplay loop muted>
+                <source src="videos/berizka/berizka-tablet.webm" type="video/webm">
+            </video>
+        </div>
+
+
+        <!--            MID-LAPTOP-->
+        <div class="hide-mobile hide-tab hide-big tv-container-laptop-mid"
+             onclick=" location.href='http://berizka.clarionio.beget.tech/';">
+            <video class="video" preload="auto" autoplay loop muted>
+                <source src="videos/berizka/berizka-laptop.webm" type="video/webm">
+            </video>
+        </div>
+
+        <!--            LARGE-LAPTOP--->
+        <div class="hide-mobile hide-tab hide-mid tv-container-laptop-big"
+             onclick=" location.href='http://berizka.clarionio.beget.tech/';">
+            <video class="video" preload="auto" autoplay loop muted>
+                <source src="videos/berizka/berizka-laptop.webm" type="video/webm">
+            </video>
+        </div>
+
+
+    </div>
+</div>
+
+<!--    CONTACT SECTION -->
+<div class="section contact-slide text-center text-uppercase">
+    <h1>Написати мені:</h1>
+    <h4><a href="mailto:nick.hlushpenko@gmail.com" class="email">nick.hlushpenko@gmail.com</a></h4>
+
+    <div class="container" id="contact">
+
+        <a href="https://www.facebook.com/nick.hlushpenko" class="socialBtn">
+            <img src="img/svg-icons/facebook.svg"
+                 alt="Facebook">
+        </a>
+
+        <a href="https://t.me/nick_hlushpenko" class="socialBtn">
+            <img src="img/svg-icons/telegram.svg" alt="Telegram">
+        </a>
+
+        <a href="https://www.pinterest.com/hlushpenko/boards/" class="socialBtn">
+            <img src="img/svg-icons/pinterest.svg" alt="Pinterest">
+        </a>
+    </div>
+</div>
+
 </div>
 
 
