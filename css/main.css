@@ -71,7 +71,7 @@ h1, h2 {
     position: absolute;
     left: 0;
     bottom: 0;
-    z-index: 6;
+    z-index: 30;
     border: 40px solid transparent;
     border-bottom: 40px solid #151513;
     border-left: 40px solid #151513;
@@ -380,7 +380,7 @@ h1, h2 {
 /* Menu*/
 .hamburger-menu {
     position: absolute;
-    z-index: 7;
+    z-index: 31;
 }
 
 #menu__toggle {
@@ -508,7 +508,7 @@ h1, h2 {
     position: absolute;
     top: 0;
     left: 0;
-    width: 0%;
+    width: 0;
     background: var(--bar-color);
     z-index: 2;
     height: 100%;

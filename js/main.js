@@ -1,12 +1,10 @@
 $(document).ready(function () {
     $('#pagepiling').pagepiling({
         menu: '#menu',
-        anchors: ['head', 'about', 'krasnarodyna', 'clarionio', 'contact'],
+        anchors: ['head', 'about', 'soft-skills', 'krasnarodyna', 'clarionio', 'berizka' , 'contact'],
         navigation: {
-            tooltips: ['Головний слайд', 'Про мене', 'ФГ КраснаРодина', 'CLARIONIO', 'Контактна інформація'],
-        },
-        // loopTop: true,
-        // loopBottom: true
+            tooltips: ['Головний слайд', 'Про мене', 'Особисті якості', 'ФГ КраснаРодина', 'CLARIONIO', 'BERIZKA', 'Контактна інформація'],
+        }
     });
 
 
