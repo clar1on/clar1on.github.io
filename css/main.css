@@ -314,22 +314,22 @@ h1, h2 {
 }
 
 
-.tv-container-tablet {
-    display: flex;
-    background: url(../img/gadgets/ipad.png) no-repeat top left transparent;
-    width: 445px;
-    height: 348px;
-    position: relative;
-    margin: 15px auto auto;
-    cursor: pointer;
-}
+/*.tv-container-tablet {*/
+/*    display: flex;*/
+/*    background: url(../img/gadgets/ipad.png) no-repeat top left transparent;*/
+/*    width: 445px;*/
+/*    height: 348px;*/
+/*    position: relative;*/
+/*    margin: 15px auto auto;*/
+/*    cursor: pointer;*/
+/*}*/
 
-.tv-container-tablet video {
-    position: absolute;
-    top: 27px;
-    left: 49px;
-    width: 347px;
-}
+/*.tv-container-tablet video {*/
+/*    position: absolute;*/
+/*    top: 27px;*/
+/*    left: 49px;*/
+/*    width: 347px;*/
+/*}*/
 
 
 .tv-container-laptop-mid {
@@ -372,19 +372,19 @@ h1, h2 {
 
 
 /*change container-device type rules*/
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 1024px) {
     .hide-mobile {
         visibility: hidden;
         display: none;
     }
 }
 
-@media only screen and (min-width: 541px) and (max-width: 1024px) {
-    .hide-tab {
-        visibility: hidden;
-        display: none;
-    }
-}
+/*@media only screen and (min-width: 541px) and (max-width: 1024px) {*/
+/*    .hide-tab {*/
+/*        visibility: hidden;*/
+/*        display: none;*/
+/*    }*/
+/*}*/
 
 @media only screen and (min-width: 1025px) and (max-width: 1199px) {
     .hide-mid {
