@@ -237,8 +237,15 @@ h1, h2 {
 
 
 
+
+.first-slide-gif{
+    display: flex;
+    margin: 1em auto auto;
+}
+
+
 /*TV containers*/
-.tv_container_pixel-2-xl {
+.tv-container-mobile {
     display: flex;
     background: url(../img/gadgets/pixel-2-xl.png) no-repeat top left transparent;
     width: 240px;
@@ -248,13 +255,13 @@ h1, h2 {
     cursor: pointer;
 }
 @media (max-width: 320px) {
-    .tv_container_pixel-2-xl {
+    .tv-container-mobile {
         background: url(../img/gadgets/pixel-2-xl-little.png) no-repeat top left transparent;
         width: 200px;
         height: 400px;
     }
 }
-.tv_container_pixel-2-xl video {
+.tv-container-mobile video {
     position: absolute;
     top: 32px;
     left: 13px;
@@ -262,7 +269,7 @@ h1, h2 {
     border-radius: 9px;
 }
 @media (max-width: 320px) {
-    .tv_container_pixel-2-xl video {
+    .tv-container-mobile video {
         top: 25px;
         left: 11px;
         width: 177px;
