@@ -1,1 +1,7 @@
+User-agent: *
+Allow: /
+
+Sitemap: http://hlushpenko.github.io/sitemap.xml
+
+
 google-site-verification=iDRDTOaVgu2m0UO_y2pXzfn4ndF-hhpjkcnPdApG_gE
