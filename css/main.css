@@ -262,19 +262,6 @@ h1, h2 {
     border: 3px solid #5c5b5b;
 }
 
-/*GIF in First Slide*/
-.first-slide-gif {
-    display: flex;
-    margin: 1em auto auto;
-}
-
-@media (max-height: 800px) {
-    .first-slide-gif {
-        visibility: hidden;
-        display: none;
-    }
-
-}
 
 
 /*TV containers*/
@@ -296,16 +283,17 @@ h1, h2 {
     }
 }
 
-.tv-container-mobile video {
+
+.tv-container-mobile img {
     position: absolute;
-    top: 32px;
+    top: 31px;
     left: 13px;
     width: 210px;
     border-radius: 9px;
 }
 
 @media (max-width: 320px) {
-    .tv-container-mobile video {
+    .tv-container-mobile img {
         top: 25px;
         left: 11px;
         width: 177px;
@@ -314,22 +302,22 @@ h1, h2 {
 }
 
 
-/*.tv-container-tablet {*/
-/*    display: flex;*/
-/*    background: url(../img/gadgets/ipad.png) no-repeat top left transparent;*/
-/*    width: 445px;*/
-/*    height: 348px;*/
-/*    position: relative;*/
-/*    margin: 15px auto auto;*/
-/*    cursor: pointer;*/
-/*}*/
+.tv-container-tablet {
+    display: flex;
+    background: url(../img/gadgets/ipad.png) no-repeat top left transparent;
+    width: 445px;
+    height: 348px;
+    position: relative;
+    margin: 15px auto auto;
+    cursor: pointer;
+}
 
-/*.tv-container-tablet video {*/
-/*    position: absolute;*/
-/*    top: 27px;*/
-/*    left: 49px;*/
-/*    width: 347px;*/
-/*}*/
+.tv-container-tablet img {
+    position: absolute;
+    top: 27px;
+    left: 49px;
+    width: 347px;
+}
 
 
 .tv-container-laptop-mid {
@@ -342,7 +330,7 @@ h1, h2 {
     cursor: pointer;
 }
 
-.tv-container-laptop-mid video {
+.tv-container-laptop-mid img{
     position: absolute;
     top: 25px;
     left: 62px;
@@ -362,7 +350,7 @@ h1, h2 {
 }
 
 
-.tv-container-laptop-big video {
+.tv-container-laptop-big img {
     position: absolute;
     top: 40px;
     left: 95px;
@@ -372,19 +360,19 @@ h1, h2 {
 
 
 /*change container-device type rules*/
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 540px) {
     .hide-mobile {
         visibility: hidden;
         display: none;
     }
 }
 
-/*@media only screen and (min-width: 541px) and (max-width: 1024px) {*/
-/*    .hide-tab {*/
-/*        visibility: hidden;*/
-/*        display: none;*/
-/*    }*/
-/*}*/
+@media only screen and (min-width: 541px) and (max-width: 1024px) {
+    .hide-tab {
+        visibility: hidden;
+        display: none;
+    }
+}
 
 @media only screen and (min-width: 1025px) and (max-width: 1199px) {
     .hide-mid {
