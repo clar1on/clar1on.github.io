@@ -82,9 +82,9 @@ html, body {
   padding: 0;
   padding-top: 5%;
   padding-bottom: 5%;
-  background-color: rgba(245, 243, 243, 0.33);
-  -moz-border-radius: 25px;
-  -webkit-border-radius: 25px;
+  /*background-color: rgba(245, 243, 243, 0.33);*/
+  /*-moz-border-radius: 25px;*/
+  /*-webkit-border-radius: 25px;*/
 }
 
 
@@ -112,24 +112,27 @@ html, body {
 }
 #pp-nav li .active span,
 .pp-slidesNav .active span {
-    background: #000000;
+    border-radius: 50%;
+    background: rgb(255, 70, 4)!important;
+    border: 5px solid;
+    margin: -5px;
+
 }
 #pp-nav span,
 .pp-slidesNav span {
-    top: 1px;
-    left: 1px;
-    width: 10px;
-    height: 10px;
-    border: 1px solid #FFF;
-
+    top: 4px;
+    left: 4px;
+    width: 5px;
+    height: 5px;
     border-radius: 50%;
     position: absolute;
     z-index: 1;
-    color: #FFF;
+    background: #f9e0d7;
+
 }
 .pp-tooltip {
     position: absolute;
-    top: -2px;
+    top: 0;
     color: #fff;
     font-size: 14px;
     font-family: arial, helvetica, sans-serif;
@@ -137,11 +140,10 @@ html, body {
     max-width: 220px;
 }
 .pp-tooltip.right {
-    right: 30px;
-    background-color: rgba(255, 255, 255, 0.33);
-    padding: 5px 10px 5px 10px;
-    border-radius: 30px;
-    color: black;
+    right: 20px;
+bottom: 2px;
+
+    color: #ffffff;
 }
 .pp-tooltip.left {
     left: 20px;
