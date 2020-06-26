@@ -3,7 +3,7 @@ $(document).ready(function () {
         menu: '#menu',
         anchors: ['head', 'about', 'soft-skills', 'hard-skills', 'krasnarodyna', 'clarionio', 'berizka' , 'contact'],
         navigation: {
-            tooltips: ['Головний слайд', 'Про мене', 'Особисті якості', 'Технічні навички', 'ФГ КраснаРодина', 'CLARIONIO', 'BERIZKA', 'Контактна інформація'],
+            tooltips: ['Home', 'About me', 'Soft skills', 'Hard skils', 'KRASNARODYNA', 'CLARIONIO', 'BERIZKA', 'Contacts'],
         }
     });
 
