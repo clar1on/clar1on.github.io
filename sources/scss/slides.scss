@@ -1,0 +1,48 @@
+@keyframes gradient-background {
+  0% {
+    background-position: 0 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+.hello-slide {
+  background: linear-gradient(-45deg, #f56868, #413ea7, #55b718, #3fa3b5);
+  background-size: 400% 400%;
+  animation: gradient-background 15s ease infinite;
+  text-transform: uppercase;
+}
+
+.about-slide {
+  background: #000000;
+}
+
+.soft-skills-slide {
+  background: #f56868;
+}
+
+.hard-skills-slide {
+  background: #34662b;
+}
+
+.krasnarodyna-slide {
+  background: #16a085;
+}
+
+.berizka-slide {
+  background: #f56868;
+}
+
+.clarionio-slide {
+  background: #3c3c3c;
+}
+
+.contact-slide {
+  background: #464646;
+}
