@@ -19,6 +19,8 @@
   font-style: normal;
 }
 
+@import "/css/palette.css";
+
 * {
   font-family: 'Roboto', serif;
 }
@@ -91,8 +93,8 @@ h1, h2, h3 {
   bottom: 0;
   z-index: 30;
   border: 40px solid transparent;
-  border-bottom: 40px solid #151513;
-  border-left: 40px solid #151513;
+  border-bottom: 40px solid var(--main-gray-color);
+  border-left: 40px solid var(--main-gray-color);
 }
 
 /*Contact icons*/
@@ -412,8 +414,9 @@ h1, h2, h3 {
     }
 
     .menu__box {
-      visibility: visible;
-      right: 0;
+    visibility: visible;
+    left: 20px;
+    bottom: -415px;
     }
   }
 }
@@ -459,18 +462,23 @@ h1, h2, h3 {
 }
 
 .menu__box {
-  display: block;
-  position: fixed;
-  visibility: hidden;
-  top: 0;
-  right: -100%;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  padding: 100px 0;
-  list-style: none;
-  background-color: #151513;
-  transition-duration: .25s;
+    bottom: 0;
+    display: block;
+    position: fixed;
+    right: -100%;
+    bottom: -100%;
+    width: 270px;
+    height: 360px;
+    margin: 0;
+    padding: 350px 0;
+    list-style: none;
+    background-color: var(--main-gray-color);
+    transform: rotate(-45deg);
+    transition-duration: .25s;
+    .menu__item{
+      transform: rotate(45deg);
+      margin-left: 100px;
+    }
 }
 
 .menu__item {
