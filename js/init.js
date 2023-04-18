@@ -79,7 +79,7 @@
 						smartBackspace: false,
 						typeSpeed: 40,
 						startDelay: 700,
-						backDelay: 3e3
+						backDelay: 1000
 					});	
 				}
 			});

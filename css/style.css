@@ -195,6 +195,7 @@ a:focus {
 	position: relative;
 	width: 100%;
 	padding: 100px 16%;
+	vertical-align: baseline;
 }
 
 .resumo_fn_right .title_holder,
@@ -214,6 +215,7 @@ a:focus {
 	width: 100%;
 	margin-bottom: 30px;
 	z-index: 5;
+	vertical-align: baseline;
 }
 
 .resumo_fn_right .border1 {
@@ -710,7 +712,7 @@ a:focus {
 /*	05) Home Section
 /*------------------------------------------------------------------*/
 #home {
-	padding: 200px 0;
+	/* padding: 200px 0; */
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
@@ -932,6 +934,7 @@ a:focus {
 	margin-bottom: 39px;
 }
 
+
 .resumo_fn_tabs .tab_header ul {
 	margin: 0;
 	padding: 0;
@@ -947,6 +950,7 @@ a:focus {
 	flex-direction: row;
 	flex-wrap: wrap;
 	list-style-type: none;
+	gap: 10px;
 }
 
 .resumo_fn_tabs .tab_header li {
@@ -954,6 +958,7 @@ a:focus {
 	padding: 0;
 	margin-bottom: 10px;
 	position: relative;
+
 }
 
 .resumo_fn_tabs .tab_header a {
@@ -972,17 +977,6 @@ a:focus {
 	border-bottom-color: var(--mc);
 }
 
-.resumo_fn_tabs .tab_header li:after {
-	content: '';
-	width: 40px;
-	height: 2px;
-	background-color: rgba(255, 255, 255, .2);
-	position: relative;
-	float: right;
-	top: 50%;
-	margin: 0 20px;
-	margin-top: 2px;
-}
 
 .resumo_fn_tabs .tab_header li:last-child:after {
 	content: none;
@@ -3637,7 +3631,23 @@ body.light .resumo_fn_modalbox .modal_content::-webkit-scrollbar-thumb {
 	}
 }
 
+
+@media screen and (min-width: 768px) {
+	.resumo_fn_tabs .tab_header li:after {
+		content: '';
+		width: 40px;
+		height: 2px;
+		background-color: rgba(255, 255, 255, .2);
+		position: relative;
+		float: right;
+		top: 50%;
+		margin: 0 20px;
+		margin-top: 2px;
+	}
+}
+
 @media screen and (min-width: 1041px) {
+	
 	.item__end_price {
 		opacity: 0;
 	}
